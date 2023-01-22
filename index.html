@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      href="./src/creative/icon/record-vinyl-solid.svg"
+      type="image/icon"
+      sizes="16x16"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
@@ -13,6 +19,49 @@
     <title>Travel Music | Creative Collection</title>
   </head>
   <body>
+    <header class="header-music">
+      <nav class="nav-music">
+        <!-- === logo-->
+        <div class="logo">
+          <span class="logo-title">MusicTravel</span>
+        </div>
+        <!-- === search-->
+        <div class="search">
+          <label for="search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+          <input type="search" class="search-travel" id="search" />
+        </div>
+        <!-- === desktop List-->
+        <div class="nav-list" id="idList">
+          <ul class="list-music">
+            <li class="list-music-link"><a href="#">Music</a></li>
+            <li class="list-music-link"><a href="#">Podcast</a></li>
+            <li class="list-music-link"><a href="#">MyList</a></li>
+            <li class="list-music-link"><a href="#">Us</a></li>
+            <li class="list-music-link"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <!-- .nav Icon-->
+        <div class="nav-icon">
+          <div class="nav-icon-notification">
+            <div class="notification-plus">
+              <i class="fa-sharp fa-solid fa-bell"></i>
+            </div>
+          </div>
+          <div class="nav-icon-user">
+            <div class="user-img">
+              <figure>
+                <img src="" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- === Navigation Mobile === -->
+      <nav class="nav-musicMobile .hidden" id="idNavMobile"></nav>
+    </header>
     <!-- === Main === -->
     <main class="main" id="idMain"></main>
     <!-- === footer-->

@@ -8,7 +8,7 @@
   --clr-black: #111111;
   --clr-black-two: #333333;
   --clr-primary: #060a0d;
-  --clr-secondary: ##7614d9;
+  --clr-secondary: #7614d9;
   --clr-third: ##f2b05e;
   --clr-extra: #7c428c;
   --clr-extra-two: #4f2859;
@@ -60,6 +60,8 @@ html {
 body {
   width: 100%;
   font-family: var(--font-f-poppins);
+  /*  background: var(--clr-primary); */
+  background: var(--clr-white);
 }
 
 img {
@@ -86,7 +88,7 @@ a {
 
 span,
 p {
-  letter-spacing: 0.1;
+  letter-spacing: 0.1rem;
 }
 
 /* === Main === */
@@ -100,4 +102,56 @@ footer {
   width: 100%;
   margin: var(--margin);
   padding: var(--padding);
+}
+
+/* === DISPLAY */
+.hidden {
+  display: none;
+  /*   overflow: hidden; */
+}
+.visible {
+  display: flex;
+  /*   overflow: visible; */
+}
+
+/* === Design Style Music Project === */
+.header-music {
+  width: 100%;
+  padding: var(--padding);
+  outline: 3px solid #333333;
+}
+.header-music .nav-music {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title {
+  color: var(--clr-secondary);
+  font-weight: 900;
+  font-family: var(--font-f-unbounded);
+  text-transform: uppercase;
+}
+
+/* === Search*/
+.search {
+  border: 0.2rem solid #060a0d;
+  padding: 0.2rem;
+  border-radius: 2rem;
+}
+.search label {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+.search input {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+/* === Nav List Music === */
+.list-music-link a {
+  /*  color: var(--clr-white-two); */
+  color: var(--clr-secondary);
 }
