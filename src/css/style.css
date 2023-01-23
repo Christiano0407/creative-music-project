@@ -227,3 +227,9 @@ footer {
 .slider-categories-img {
   width: 100%;
 }
+.slider-text {
+  padding: 0.5rem;
+}
+.slider-text h3 {
+  text-align: center;
+}

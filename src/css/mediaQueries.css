@@ -135,6 +135,14 @@
   .slider-img-plus figure img {
     border-radius: 1rem;
   }
+  .slider-text h3 {
+    font-size: var(--font-size-sm-plus);
+    font-weight: 700;
+  }
+  .categories-link button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
 }
 /*=============== Screen Laptop ===================================*/
 @media screen and (min-width: 1024px) {
