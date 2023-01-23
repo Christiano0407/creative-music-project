@@ -96,6 +96,7 @@ main {
   width: 100%;
   margin: var(--margin);
   padding: var(--padding);
+  display: grid;
 }
 
 footer {
@@ -154,4 +155,58 @@ footer {
 .list-music-link a {
   /*  color: var(--clr-white-two); */
   color: var(--clr-secondary);
+}
+.nav-icon {
+  width: 10rem;
+}
+.nav-icon .nav-icon-notification i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-icon-user figure {
+  width: 3rem;
+  height: 3rem;
+}
+.nav-icon-user figure img {
+  border-radius: 50%;
+}
+
+.btn-nav,
+.btn-notification {
+  padding: 0.5rem;
+  border: none;
+}
+
+.nav-musicMobile {
+  grid-area: slider;
+  width: 100%;
+}
+
+.nav-musicMobile button {
+  padding: 1rem;
+  border: none;
+}
+
+.nav-musicMobile button i {
+  font-size: 2rem;
+  color: #7614d9;
+  cursor: pointer;
+}
+
+.nav-listMobile {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.music-play {
+  grid-area: musicPlay;
+  width: 100%;
+}
+.music-categories {
+  grid-area: categories;
+  width: 100%;
 }

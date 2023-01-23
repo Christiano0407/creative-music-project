@@ -23,7 +23,7 @@
       <nav class="nav-music">
         <!-- === logo-->
         <div class="logo">
-          <span class="logo-title">MusicTravel</span>
+          <span class="logo-title">MCTravel</span>
         </div>
         <!-- === search-->
         <div class="search">
@@ -45,25 +45,54 @@
         <!-- .nav Icon-->
         <div class="nav-icon">
           <div class="nav-icon-notification">
-            <div class="notification-plus">
+            <button class="btn-notification">
               <i class="fa-sharp fa-solid fa-bell"></i>
-            </div>
+            </button>
           </div>
           <div class="nav-icon-user">
-            <div class="user-img">
-              <figure>
-                <img src="" alt="" />
-              </figure>
-            </div>
+            <figure>
+              <img
+                src="/src/creative/img/imgMob/img-4.jpg"
+                alt="image-icon-header"
+              />
+            </figure>
+          </div>
+          <div class="nav-icon-menu">
+            <button class="btn-nav">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
         </div>
       </nav>
-
-      <!-- === Navigation Mobile === -->
-      <nav class="nav-musicMobile .hidden" id="idNavMobile"></nav>
     </header>
     <!-- === Main === -->
-    <main class="main" id="idMain"></main>
+    <main class="main" id="idMain">
+      <!-- === Navigation Mobile === -->
+      <nav class="nav-musicMobile" id="idNavMobile">
+        <ul class="nav-listMobile">
+          <li class="nav-listMobile-link">
+            <button><i class="fa-solid fa-house-user"></i></button>
+          </li>
+          <li class="nav-listMobile-link">
+            <button><i class="fa-regular fa-heart"></i></button>
+          </li>
+          <li class="nav-listMobile-link">
+            <button><i class="fa-solid fa-music"></i></button>
+          </li>
+          <li class="nav-listMobile-link">
+            <button><i class="fa-solid fa-podcast"></i></button>
+          </li>
+          <li class="nav-listMobile-link">
+            <button><i class="fa-sharp fa-solid fa-location-dot"></i></button>
+          </li>
+          <li class="nav-listMobile-link">
+            <button><i class="fa-regular fa-ticket"></i></button>
+          </li>
+        </ul>
+      </nav>
+      <section class="music-play"></section>
+      <section class="music-categories"></section>
+    </main>
     <!-- === footer-->
     <footer></footer>
     <!-- === Javascript === -->
