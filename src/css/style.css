@@ -254,3 +254,9 @@ footer {
 .btn-icon:active {
   transform: scale(0.9);
 }
+
+.playlist {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}

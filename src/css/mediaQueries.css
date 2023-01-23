@@ -23,6 +23,7 @@
     width: 50%;
     height: 100vh;
     position: absolute;
+    z-index: 10;
     background-color: var(--clr-white-two);
   }
 
@@ -364,6 +365,45 @@
   .player-control .btn-icon .default-icon,
   .player-control .btn-icon.active .active-icon {
     display: block;
+  }
+  /* === Playlist */
+  .playlist {
+    position: relative;
+    z-index: 5;
+    top: 0;
+    overflow-y: overlay;
+    visibility: hidden;
+    transition: var(--transition-1);
+    border: 2px solid #111;
+    height: 60rem;
+    /*  right: -18rem; */
+  }
+  .playlist:hover::-webkit-scrollbar-thumb {
+    background-color: var(--clr-secondary);
+  }
+  .playlist.active {
+    transform: translateX(-18rem);
+    visibility: visible;
+  }
+  .music-list {
+    display: grid;
+    gap: 2rem;
+  }
+  .overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60rem;
+    background-color: var(--clr-primary);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-2);
+    z-index: 3;
+  }
+  .overlay.active {
+    pointer-events: all;
+    opacity: 0.5;
   }
 }
 /*=============== Screen Laptop ===================================*/
