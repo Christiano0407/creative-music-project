@@ -20,6 +20,86 @@
   }
   .nav-musicMobile {
     display: none;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--clr-white-two);
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+  .music-play {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .music-categories {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .music-play,
+  .music-categories {
+    overflow: hidden;
+  }
+  .title-categories {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .title-categories h1 {
+    text-align: center;
+    font-size: var(--font-size-lg);
+  }
+  .slider-categories-text {
+    margin: var(--margin);
+  }
+  .slider-categories-text .categories-list {
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .categories-list .categories-link button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: var(--clr-secondary);
+    color: var(--clr-white-two);
+    border: none;
+    outline: none;
+  }
+  .slider-categories-img {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .slider-categories-img .list-slider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .slider-img-plus {
+    margin-right: 1rem;
+  }
+  .slider-img-plus figure {
+    width: 15rem;
+    height: 20rem;
+  }
+  .slider-img-plus figure img {
+    border-radius: 2rem;
+  }
+  .slider-text {
+    width: 100%;
+    padding: 1rem;
+  }
+  .slider-text h3 {
+    font-size: 1.4rem;
   }
 }
 
@@ -28,7 +108,7 @@
 /*=============== Tablet  ========================================*/
 @media screen and (min-width: 768px) {
   .nav-music .logo .logo-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-extra);
   }
   .list-music {
     display: flex;
@@ -60,6 +140,14 @@
   .nav-musicMobile {
     display: flex;
   }
+
+  .search {
+    width: 15rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
   main {
     width: 100%;
     height: 100%;
@@ -116,14 +204,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
-    width: 200%;
+    width: 100%;
   }
   .list-slider {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0.5rem;
-    width: 200%;
+    width: 100%;
   }
   .list-slider .slider-img-plus {
     margin-right: 0.5rem;
@@ -142,6 +230,15 @@
   .categories-link button {
     padding: 0.5rem;
     border-radius: 0.5rem;
+  }
+  .nav-musicMobile {
+    grid-area: slider;
+  }
+  .music-pla {
+    grid-area: musicPlay;
+  }
+  .music-categories {
+    grid-area: categories;
   }
 }
 /*=============== Screen Laptop ===================================*/
