@@ -335,6 +335,36 @@
     margin: 1rem auto;
     width: 90%;
   }
+  .player-control {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .player-control .toggle.active {
+    color: var(--clr-secondary);
+  }
+  .player-control .play {
+    color: var(--clr-white-two);
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-secondary);
+  }
+  .player-control .play.active {
+    color: var(--clr-secondary);
+  }
+  .player-control .btn-icon.active .default-icon,
+  .player-control .btn-icon .active-icon {
+    display: none;
+  }
+  .player-control .btn-icon .default-icon,
+  .player-control .btn-icon.active .active-icon {
+    display: block;
+  }
 }
 /*=============== Screen Laptop ===================================*/
 @media screen and (min-width: 1024px) {
