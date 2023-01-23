@@ -93,7 +93,11 @@
       <section class="music-play">
         <div class="image-play">
           <figure>
-            <img src="./src/creative/img/01_3D.jpg" alt="image-music-play" />
+            <img
+              src="./src/creative/img/01_3D.jpg"
+              data-player-banner
+              alt="image-music-play"
+            />
           </figure>
         </div>
 
@@ -101,7 +105,72 @@
           <div class="reproductor-title"><h1>Music Loved Symphony</h1></div>
           <article class="article-player">
             <div class="player">
-              <div class="container"></div>
+              <div class="container">
+                <figure class="music-banner">
+                  <img
+                    src="/src/creative/img/plus-img1.jpg"
+                    alt="image-banner"
+                    class="image-banner"
+                    data-player-banner
+                  />
+                </figure>
+                <div class="music-content">
+                  <h2 class="headline-sm" data-title>
+                    Travel Moments with Music
+                  </h2>
+                  <p class="label-lg label-wrapper wrapper">
+                    <span data-album>Not Spirit</span>
+                    <span data-year>2023</span>
+                  </p>
+
+                  <p class="label-md artist" data-artist>Spirit Of Space</p>
+
+                  <!-- ==== Control ==== -->
+                  <div class="seek-control">
+                    <div>
+                      <div class="range-wrapper">
+                        <input
+                          type="range"
+                          step="1"
+                          max="60"
+                          value="0"
+                          class="range"
+                          data-range
+                          data-seek
+                        />
+                        <!-- === range Javascript === -->
+                        <div class="range-fill" data-range-fill></div>
+                      </div>
+
+                      <div class="duration-label wrapper">
+                        <span class="label-md" data-running-time>0:0</span>
+                        <span class="label-md" data-duration>1:00</span>
+                      </div>
+                    </div>
+                    <!-- ===== Volume ==== -->
+                    <div class="volume">
+                      <button class="btn-icon" data-volume-btn>
+                        <span class="material-symbol-rounded">Volume_up</span>
+                      </button>
+
+                      <div class="range-wrapper">
+                        <input
+                          type="range"
+                          step="0.5"
+                          max="1"
+                          value="1"
+                          class="range"
+                          data-range
+                          data-volume
+                        />
+                        <div class="range-fill" data-range-fill=""></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ==== Player Control ====  -->
+                  <div class="player-control wrapper"></div>
+                </div>
+              </div>
             </div>
           </article>
         </div>

@@ -248,6 +248,93 @@
     color: var(--clr-secondary);
     transform: scale(0.9);
   }
+  .image-banner {
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .music-banner {
+    width: 90%;
+    margin: 1rem auto;
+    height: 20rem;
+  }
+  .player {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+  }
+  .player .container {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    gap: 0.5rem;
+  }
+  .label-wrapper {
+    justify-content: center;
+    opacity: 0.8;
+    /* margin-block: 8px 4px; */
+    margin: 8px auto;
+  }
+  .label-wrapper span:first-child::after {
+    content: '|';
+    display: inline-block;
+    margin-inline: 0.4rem;
+  }
+  .artist {
+    opacity: 0.6;
+    /*  margin-block-end: 3rem; */
+    margin-bottom: 3rem;
+  }
+  .seek-control {
+    margin-bottom: 2rem;
+    /*  margin-block-end: 2rem; */
+  }
+  .range-wrapper {
+    position: relative;
+  }
+  .range {
+    appearance: none;
+    cursor: pointer;
+  }
+  .range::-webkit-slider-runnable-track {
+    appearance: none;
+    background-color: var(--clr-secondary);
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .range::-webkit-slider-thumb {
+    appearance: none;
+    background-color: var(--clr-primary);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -5px;
+    border-radius: 1rem;
+    transition: var(--transition-1);
+  }
+  .range::-webkit-slider-thumb:hover {
+    box-shadow: var(--box-shadow);
+  }
+  .range::-webkit-slider-thumb:is(:focus, :focus-visible) {
+    box-shadow: var(--box-shadow);
+  }
+  .range-fill {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0.6rem;
+    background-color: var(--clr-third);
+    border-radius: 1rem;
+    pointer-events: none;
+  }
+  .duration-label {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 2rem; */
+    margin: 1rem auto;
+    width: 90%;
+  }
 }
 /*=============== Screen Laptop ===================================*/
 @media screen and (min-width: 1024px) {
