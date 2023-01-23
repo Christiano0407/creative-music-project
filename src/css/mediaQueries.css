@@ -147,6 +147,9 @@
     display: flex;
     align-items: center;
   }
+  .search input {
+    width: 100%;
+  }
 
   main {
     width: 100%;
@@ -239,6 +242,11 @@
   }
   .music-categories {
     grid-area: categories;
+  }
+  /* === New Btn === */
+  .btn-notification:is(:focus, :focus-visible) {
+    color: var(--clr-secondary);
+    transform: scale(0.9);
   }
 }
 /*=============== Screen Laptop ===================================*/
