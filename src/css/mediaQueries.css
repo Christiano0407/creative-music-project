@@ -103,6 +103,38 @@
   .title-categories h1 {
     font-size: 3.4rem;
   }
+  .slider-categories-text,
+  .slider-categories-img {
+    overflow-x: hidden;
+    padding: 0.5rem;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  .slider-categories-text .categories-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    width: 200%;
+  }
+  .list-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    width: 200%;
+  }
+  .list-slider .slider-img-plus {
+    margin-right: 0.5rem;
+  }
+  .slider-img-plus figure {
+    width: 15rem;
+    height: 20rem;
+  }
+  .slider-img-plus figure img {
+    border-radius: 1rem;
+  }
 }
 /*=============== Screen Laptop ===================================*/
 @media screen and (min-width: 1024px) {

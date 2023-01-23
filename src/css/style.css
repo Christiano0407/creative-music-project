@@ -220,3 +220,10 @@ footer {
 .title-categories h1 {
   font-family: var(--font-f-unbounded);
 }
+
+.slider-categories-text {
+  width: 100%;
+}
+.slider-categories-img {
+  width: 100%;
+}
